@@ -34,7 +34,7 @@ public class TextImage extends Box{
         for(int i = 0; i < text.length(); i++){
             char c = text.charAt(i);
             c -= 'a';
-            int index = (int)c;
+            int index = c;
             int row = index / fontSheet[0].length;
             int col = index % fontSheet[0].length;
             sb.draw(fontSheet[row][col],x - width / 2 + 50 * i,
