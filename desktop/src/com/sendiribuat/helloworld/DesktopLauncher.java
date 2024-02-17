@@ -8,9 +8,10 @@ import com.sendiribuat.helloworld.helloworld;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
-		config.setForegroundFPS(60);
+//		config.setForegroundFPS(60);
 		config.setTitle(helloworld.TITLE);
 		config.setWindowedMode(helloworld.WIDTH, helloworld.HEIGHT);
+
 		new Lwjgl3Application(new helloworld(), config);
 	}
 }

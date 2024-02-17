@@ -36,6 +36,5 @@ public class helloworld extends ApplicationAdapter {
 
 		gsm.update(Gdx.graphics.getDeltaTime());
 		gsm.render(sb);
-		gsm.push(new PlayState(gsm));
 	}
 }
