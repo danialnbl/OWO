@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.sendiribuat.helloworld.handler.Content;
 import com.sendiribuat.helloworld.states.GSM;
+import com.sendiribuat.helloworld.states.MenuState;
 import com.sendiribuat.helloworld.states.PlayState;
 
 public class helloworld extends ApplicationAdapter {
@@ -27,7 +28,7 @@ public class helloworld extends ApplicationAdapter {
 
 		sb = new SpriteBatch();
 		gsm = new GSM();
-		gsm.push(new PlayState(gsm));
+		gsm.push(new MenuState(gsm));
 	}
 
 	@Override
